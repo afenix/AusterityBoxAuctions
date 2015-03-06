@@ -2,11 +2,12 @@
   Current Boxes:
 </h3>
 
-<ul>
+<ul class="list-title list-unstyled">
   {{#each}}
-  <li>{{name}}   <a href="#" {{action 'delete' this}}>Delete</a></li>
+  <li class="li-name">{{#link-to 'box' this.id}}{{name}}{{/link-to}} | <a href="#" class="btn btn-primary btn-xs" {{action 'delete' this}}>Delete</a></li>
     <ul>
-      <li>{{description}}</li>
+      <li class="li-desc">{{description}}</li>
     </ul>
+
   {{/each}}
 </ul>

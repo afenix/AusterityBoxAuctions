@@ -1,4 +1,4 @@
-<h2>Add a box!</h2>
+<h3>Add a box!</h3>
 <form>
   <div class="form-group">
     <label for="name">Box Name</label>
@@ -7,7 +7,7 @@
 
   <div class="form-group">
     <label for="description">Description</label>
-    {{input id="description" type="text" class="form-control" value=description}}
+    {{textarea id="description" type="text" class="form-control" value=description}}
   </div>
 
   <button class="btn btn-primary" {{action 'save'}}>Save</button>

@@ -5,7 +5,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker|Advent+Pro' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya|Josefin+Sans' rel='stylesheet' type='text/css'>
 
   <script src="libs/jquery-1.11.1.js"></script>
   <script src="libs/ember-template-compiler-1.10.0.js"></script>
@@ -13,6 +13,7 @@
   <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
   <script src="libs/ember-data-1.0.0-beta.15.js"></script>
   <script src="libs/localstorage-adapter-0.5.1.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
   <script src="austerityBox.js"></script>
   <script src="store.js"></script>
@@ -20,9 +21,9 @@
 
   <script src="controllers/about.js"></script>
 
-  <script src="controllers/lot.js"></script>
-  <script src="routes/lot.js"></script>
-  <script src="models/lot.js"></script>
+  <script src="controllers/item.js"></script>
+  <script src="routes/item.js"></script>
+  <script src="models/item.js"></script>
 
   <script src="controllers/boxes.js"></script>
   <script src="routes/boxes.js"></script>
@@ -32,13 +33,25 @@
   <script src="routes/new-box.js"></script>
   <script src="models/new-box.js"></script>
 
+  <script src="controllers/box.js"></script>
+  <script src="routes/box.js"></script>
+  <script src="models/box.js"></script>
+
+  <script src="controllers/new-item.js"></script>
+  <script src="routes/new-item.js"></script>
+  <script src="models/new-item.js"></script>
+
   <script>
     EmberHandlebarsLoader.loadTemplates([
-      'application', 'about', 'lot', 'boxes', 'new-box'
+      'application', 'about', 'item', 'boxes', 'new-box', 'box', 'new-item'
     ]);
   </script>
 </head>
 <body>
-
+  <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+      });
+  </script>
 </body>
 </html>
